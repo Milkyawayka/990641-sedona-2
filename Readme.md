@@ -2,7 +2,7 @@
 
 * Студент: [Альбина Магасумова](https://up.htmlacademy.ru/htmlcss-individual/2/user/990641).
 * Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
-
+* Сайт: [Мой проект Седона](https://milkyawayka.github.io/990641-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

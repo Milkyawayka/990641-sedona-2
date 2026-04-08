@@ -18,12 +18,18 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans Regular", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 1.4;
-  color: #000;
+  line-height: 25px;
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -40,6 +46,9 @@ img {
   overflow: hidden;
 }
 
+main {
+  flex-grow: 1;
+}
 
 .container {
   width: 1200px;
@@ -55,11 +64,11 @@ img {
   width: 160px;
   background: #756157;
   border-radius: 4px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;         
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;  
   text-decoration: none;    
 }
@@ -107,8 +116,8 @@ img {
 
 .navigation-list a {
   text-decoration: none;
-  color: #000;
-  font-weight: 700;
+  color: #000000;
+  font-weight: bold;
 }
 
 .navigation-user {
@@ -129,7 +138,7 @@ img {
 .favourite-count {
   position: absolute;
   background: #7db54f;
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   border-radius: 50%;
   padding: 2px 6px;
@@ -148,14 +157,43 @@ img {
   text-align: center;
 }
 
-.advantages h2 {
+.advantages-title {
+  width: 100%;   
+  max-width: 620px;           
+  height: 72px;                 
+  font-style: normal;
+  font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 36px;          
+  text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  color: #000000;
+  display: flex;                
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 auto 20px auto;
 }
 
-.advantages p {
+.section-description {
+  width: 651px;
+height: 26px;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+
+.description {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 60px;
@@ -196,7 +234,7 @@ img {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.6) !important; 
+  background-color: rgba(255, 255, 255, 0.6); 
   margin: 10px auto 15px; 
 }
 
@@ -250,10 +288,10 @@ img {
   background-color: rgba(131, 179, 211, 0.12); 
 }
 
-.advantages-list li h3 {
+.advantages-title {
 width: 175px;
 height: 56px;
-font-family: 'PT Sans';
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -268,7 +306,7 @@ flex-grow: 0;
 .advantages-list li p {
 width: 230px;
 height: 42px;
-font-family: 'PT Sans';
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -300,7 +338,7 @@ flex-grow: 0;
 .advantage-bridge p {
   margin-top: 30px;   
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .reasons {
@@ -326,7 +364,7 @@ flex-grow: 0;
 .reasons-intro h2 {
 width: 505px;
 height: 72px;
-font-family: 'PT Sans';
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
@@ -342,7 +380,7 @@ flex-grow: 0;
 .reasons-intro p {
  width: 490px;
 height: 26px;
-font-family: 'PT Sans';
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
@@ -387,7 +425,7 @@ flex-grow: 0;
 }
 
 .reasons-list li h3 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -404,7 +442,7 @@ flex-grow: 0;
 .reasons-list li p {
   width: 230px;
   height: 63px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -437,7 +475,7 @@ flex-grow: 0;
   padding: 96px 20px;     
   width: 100%;
   min-height: 406px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .information h2 {
@@ -468,7 +506,7 @@ flex-grow: 0;
   padding: 12px 50px;
   background: #756157;
   border-radius: 4px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -518,13 +556,13 @@ flex-grow: 0;
 .newsletter h2 {
  width: 404px;
 height: 36.35px;
-font-family: "PT Sans";
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: bold;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
-color: #FFFFFF;
+color: #ffffff;
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -534,7 +572,7 @@ gap: 20px;
 .newsletter-catalog h2 {
 width: 404px;
 height: 36.35px;
-font-family: "PT Sans";
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: bold;
 font-weight: 700;
 font-size: 30px;
@@ -550,19 +588,19 @@ gap: 20px;
 .newsletter p {
   width: 475px;
   height: 52.51px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .newsletter-catalog p {
   width: 475px;
   height: 52.51px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -596,7 +634,7 @@ gap: 260px;
 font-size: 18px;
 width: 87px;
 height: 24px;
-font-family: 'PT Sans';
+font-family: "PT Sans", "Arial", sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -628,12 +666,12 @@ display: flex;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px; 
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .newsletter-form button {
@@ -646,16 +684,16 @@ display: flex;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px; 
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .page-footer {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   padding: 20px 0;
   box-sizing: border-box;
@@ -685,10 +723,10 @@ display: flex;
 }
 
 .footer-phone {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   text-align: center;
   flex: 1; 
@@ -716,7 +754,7 @@ display: flex;
   white-space: nowrap;
 }
 
-.main.catalog {
+.catalog {
   max-width: 100%;
   margin: auto;
 }
@@ -727,7 +765,7 @@ display: flex;
   justify-content: center;  
   align-items: center;      
   gap: 20px;                
-  width: 100vw;            
+  width: 100%;            
   height: 412px;            
   margin: 0 auto;
   box-sizing: border-box;
@@ -803,12 +841,12 @@ display: flex;
   border-radius: 6px;
   cursor: pointer;
   background: #4facfe;
-  color: white;
+  color: #ffffff;
   transition: 0.3s;
 }
 
 .filter-buttons .reset {
-  background: #999;
+  background: #999999;
 }
 
 .filter-buttons button:hover {
@@ -830,8 +868,8 @@ display: flex;
 .sorting {
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
+  border: 1px solid #cccccc;
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -844,7 +882,7 @@ display: flex;
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -868,7 +906,7 @@ display: flex;
 }
 
 .card .type {
-  color: #777;
+  color: #777777;
   margin-bottom: 5px;
 }
 

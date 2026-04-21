@@ -12,9 +12,6 @@
   font-display: swap;
 }
 
-/* ======================
-   БАЗА
-====================== */
 *,
 *::before,
 *::after {
@@ -23,15 +20,17 @@
 
 body.page {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5px;
+  color: #000000;
   background: #f2f2f2;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
+  background: #ffffff;
 }
 
 img {
@@ -41,16 +40,14 @@ img {
 
 .visually-hidden {
   position: absolute;
-  opacity: 0;
-  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-/* ======================
-   HEADER
-====================== */
 .header {
-  padding: 20px 40px;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 0 70px;
+  background: #ffffff;
 }
 
 .navigation {
@@ -59,51 +56,89 @@ img {
   align-items: center;
 }
 
-.menu,
-.user {
+.navigation-logo {
+  display: block;
+}
+
+.logo-img {
+  display: block;
+}
+
+.menu {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu-link {
+  display: block;
+  padding: 20px 0;
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .menu-link--active {
   border-bottom: 2px solid #756157;
 }
 
-.count {
-  position: absolute;
-  font-size: 10px;
-  background: red;
-  color: #fff;
-  padding: 2px 5px;
-  border-radius: 50%;
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
 }
 
-/* ======================
-   BUTTONS
-====================== */
-.button {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 6px;
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  background: #756157;
-  color: #fff;
-  font-size: 14px;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #7db54f;
+  color: #ffffff;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756157;
+}
+
+.button:hover {
+  background: #615048;
+}
+
+.button--brown {
+  background: #756157;
 }
 
 .button--primary {
   background: #82b3d3;
+}
+
+.button--primary:hover {
+  background: #68a2ca;
 }
 
 .button--favorite {
@@ -114,77 +149,100 @@ img {
   background: #7db54f;
 }
 
-.button--reset {
-  background: transparent;
-  color: #000;
-}
-
-/* ======================
-   HERO
-====================== */
 .hero {
   background: url("../images/index-background.jpg") center/cover no-repeat;
-  padding: 80px 0;
+  padding: 90px 0;
   text-align: center;
 }
 
 .hero-decor {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-/* ======================
-   ADVANTAGES
-====================== */
 .advantages {
-  padding: 60px 40px;
+  padding: 60px 70px;
   text-align: center;
+}
+
+.advantages-intro {
+  margin-bottom: 40px;
+}
+
+.advantages-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.advantages-description {
+  color: #666666;
+  margin: 0;
 }
 
 .advantages-list {
   list-style: none;
   padding: 0;
-  margin-top: 40px;
+  margin: 0;
 }
 
 .advantages-item {
-  padding: 30px;
-  border-bottom: 1px solid #eee;
+  padding: 40px 30px;
 }
 
 .advantages-item--wide {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 0;
 }
 
 .advantages-box {
-  padding: 40px;
   flex: 1;
+  padding: 60px
 }
 
 .advantages-box--blue {
   background: #82b3d3;
   color: #fff;
+  padding: 60px;
 }
 
 .advantages-img {
   flex: 1;
+  object-fit: cover;
 }
 
-/* ======================
-   REASONS
-====================== */
+.advantages-text {
+  margin: 10px 0 0;
+}
+
 .reasons {
-  padding: 60px 40px;
+  padding: 60px 70px;
   text-align: center;
+}
+
+.reasons-intro {
+  margin-bottom: 40px;
+}
+
+.reasons-title {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.reasons-description {
+  margin: 0;
+  color: #555555;
 }
 
 .reasons-list {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
   padding: 0;
-  margin-top: 40px;
+  margin: 0;
 }
 
 .reasons-item {
@@ -192,52 +250,55 @@ img {
   padding: 20px;
 }
 
-/* ======================
-   INFORMATION
-====================== */
 .information {
   text-align: center;
-  padding: 60px 40px;
+  padding: 70px;
 }
 
-/* ======================
-   NEWSLETTER (общий)
-====================== */
-.newsletter,
-.newsletter-main-catalog {
+.information-title {
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+
+.newsletter {
+  padding: 70px;
   text-align: center;
-  padding: 60px 40px;
-  background: #82b3d3;
-  color: #fff;
+  background: url("../images/subscribe.jpg");
+  color: #ffffff;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  margin: 0 0 10px;
 }
 
 .newsletter-form {
   margin-top: 20px;
 }
 
-.newsletter-input,
-.newsletter-form input {
-  padding: 10px;
-  width: 250px;
+.newsletter-input {
+  padding: 12px;
+  width: 300px;
   border: none;
 }
 
-.newsletter-button,
-.newsletter-form button {
-  padding: 10px 20px;
+.newsletter-button {
+  padding: 12px 20px;
   border: none;
-  background: #756157;
-  color: #fff;
+  background: #82b3d3;
+  color: #ffffff;
   cursor: pointer;
 }
 
-/* ======================
-   CATALOG HEADER
-====================== */
 .catalog {
-  padding: 40px;
+  padding: 40px 70px;
   background: url("../images/catalog-bg.jpg") center/cover no-repeat;
-  color: #fff;
+  color: #ffffff;
+}
+
+.catalog-title {
+  font-size: 60px;
+  margin-bottom: 0 0 10px;
 }
 
 .breadcrumbs {
@@ -245,19 +306,25 @@ img {
   gap: 10px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.catalog-filter {
+  margin-top: 40px;
 }
 
-/* ======================
-   FILTER
-====================== */
 .filter {
   display: flex;
-  gap: 40px;
-  margin-top: 30px;
+  gap: 60px;
 }
 
 .filter-group {
   border: none;
+  padding: 0;
+ }
+
+.filter-title {
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .filter-label {
@@ -275,11 +342,8 @@ img {
   padding: 5px;
 }
 
-/* ======================
-   RESULTS
-====================== */
 .catalog-results {
-  padding: 40px;
+  padding: 50px 70px;
 }
 
 .catalog-controls {
@@ -288,22 +352,23 @@ img {
   align-items: center;
 }
 
-/* ======================
-   HOTEL CARDS
-====================== */
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 20px;
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin: 30px 0 0;
 }
 
 .hotel-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  padding: 15px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+}
+
+.hotel-card-title {
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 .hotel-card-info {
@@ -317,46 +382,35 @@ img {
   gap: 10px;
 }
 
-/* ======================
-   RATING
-====================== */
 .rating {
   background: #f2f2f2;
   padding: 6px;
-  border-radius: 4px;
-  display: inline-block;
   font-size: 14px;
+  margin-top: 10px;
 }
 
-/* ======================
-   PAGINATION
-====================== */
 .pagination {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   list-style: none;
-  margin: 40px 0;
   padding: 0;
+  margin: 40px 0;
 }
 
 .pagination a {
-  padding: 8px 14px;
+  display: block;
+  padding: 10px 14px;
   background: #82b3d3;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
 }
 
 .pagination .active {
-  background: #333;
+  background: #000000;
 }
 
-/* ======================
-   FOOTER
-====================== */
 .page-footer {
-  padding: 30px 40px;
-  border-top: 1px solid #e5e5e5;
+  padding: 40px 70px;
 }
 
 .footer-container {
@@ -370,6 +424,15 @@ img {
   gap: 15px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-phone {

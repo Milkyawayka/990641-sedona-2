@@ -73,7 +73,7 @@
               <input class="filter-input" type="checkbox" name="pool" checked> Бассейн</label>
             <label class="filter-label">
               <input class="filter-input" type="checkbox" name="parking" checked> Парковка</label>
-            <label clss="filter-label">
+            <label class="filter-label">
               <input class="filter-input" type="checkbox" name="wifi"> Wi-Fi</label>
           </fieldset>
 
@@ -93,12 +93,12 @@
               <div class="filter-price">
                 <label class="filter-price-label">
                 <span class="filter-price-text">от</span>
-                <input class="filter-price-input"> type="number" name="price-from" value="0">
+                <input class="filter-price-input" type="number" name="price-from" value="0">
                 </label>
 
               <label class="filter-price-label">
                 <span class="filter-price-text">до</span>
-                <input class="filter-price-input"> type="number" name="price-to" value="9000">
+                <input class="filter-price-input" type="number" name="price-to" value="9000">
               </label>
               </div>
 
@@ -145,57 +145,57 @@
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 4000 ₽</span>
             </div>
-            <div class="card-buttons">
-              <a href="#">Подробнее</a>
-              <a href="#">В избранное</a>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
             </div>
             <p class="rating rating-4">
               <span class="rating-text">Рейтинг: 8,5</span>
             </p>
           </li>
 
-          <li class="card">
-            <img src="images/hotel-2.jpg" alt="">
-            <h3 class="name">Villas at Poco Diablo</h3>
-            <div class="card-text">
-              <span>Гостиница</span>
-              <span>От 5000 ₽</span>
+          <li class="hotel-card hotel-card--favorite">
+            <img class="hotel-card-image" src="images/hotel-2.jpg" alt="">
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            <div class="hotel-card-info">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">От 5000 ₽</span>
             </div>
-            <div class="card-buttons">
-              <a href="#">Подробнее</a>
-              <a href="#" class="active">В избранном</a>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite-active" href="#" class="active">В избранном</a>
             </div>
             <p class="rating rating-4">
               <span class="rating-text">Рейтинг: 9,2</span>
             </p>
           </li>
 
-          <li class="card">
-            <img src="images/hotel-3.jpg" alt="">
-            <h3 class="name">Desert Quail Inn</h3>
-            <div class="card-text">
-              <span>Гостиница</span>
-              <span>От 2500 ₽</span>
+          <li class="hotel-card">
+            <img class="hotel-card-image" src="images/hotel-3.jpg" alt="">
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            <div class="hotel-card-info">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">От 2500 ₽</span>
             </div>
-            <div class="card-buttons">
-              <a href="#">Подробнее</a>
-              <a href="#">В избранное</a>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
             </div>
             <p class="rating rating-3">
               <span class="rating-text">Рейтинг: 6,9</span>
             </p>
           </li>
 
-          <li class="card">
-            <img src="images/hotel-4.jpg" alt="">
-            <h3 class="name">GreenTree Inn</h3>
-            <div class="card-text">
-              <span>Гостиница</span>
-              <span>От 1500 ₽</span>
+          <li class="hotel-card">
+            <img class="hotel-card-image" src="images/hotel-4.jpg" alt="">
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+            <div class="hotel-card-info">
+              <span class="hotel-card-type">Гостиница</span>
+              <span class="hotel-card-price">От 1500 ₽</span>
             </div>
             <div class="card-buttons">
-              <a href="#">Подробнее</a>
-              <a href="#">В избранное</a>
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
             </div>
             <p class="rating rating-2">
               <span class="rating-text">Рейтинг: 5,0</span>
@@ -225,8 +225,8 @@
             <input type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
             <button type="submit">Подписаться</button>
           </form>
-        </section>
       </div>
+    </section>
     </main>
 
     <footer class="page-footer">

@@ -27,41 +27,34 @@
   --blue: #82b3d3;
   --light-blue: #f0f6fa;
   --green: #7db54f;
-  --black: #000;
-  --white: #fff;
+  --text: #000;
   --bg: #f2f2f2;
+  --white: #fff;
 }
 
 body.page {
   margin: 0;
-  min-height: 100vh;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 21px;
-  color: var(--black);
+  color: var(--text);
   background: var(--bg);
-  display: flex;
-  flex-direction: column;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   background: var(--white);
-  flex: 1;
+}
+
+/* =========================
+   RESET
+========================= */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* =========================
@@ -79,14 +72,12 @@ img {
   display: flex;
   gap: 30px;
   margin-left: 30px;
-  list-style: none;
-  padding: 0;
 }
 
 .menu-link {
   font-weight: 700;
   text-decoration: none;
-  color: var(--black);
+  color: var(--text);
   padding: 20px 16px;
   display: block;
 }
@@ -99,7 +90,6 @@ img {
   margin-left: auto;
   display: flex;
   gap: 20px;
-  list-style: none;
 }
 
 /* =========================
@@ -115,9 +105,9 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
-  color: var(--white);
   border: none;
   cursor: pointer;
+  color: #fff;
 }
 
 .button--brown {
@@ -146,11 +136,25 @@ img {
 
 .hero {
   min-height: 485px;
-  background: url("../images/index-background.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.hero-decor {
+  position: relative;
+}
+
+.welcome {
+  display: block;
+}
+
+.vector {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
 }
 
 /* =========================
@@ -166,8 +170,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 90px;
-  padding: 0;
-  list-style: none;
 }
 
 .advantages-item {
@@ -191,7 +193,7 @@ img {
 
 .advantages-box--blue {
   background: var(--blue);
-  color: var(--white);
+  color: #fff;
 }
 
 .advantages-img {
@@ -212,8 +214,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 64px;
-  list-style: none;
-  padding: 0;
 }
 
 .reasons-item {
@@ -224,37 +224,127 @@ img {
   background: var(--light-blue);
 }
 
+.reasons-img {
+  margin-bottom: 20px;
+}
+
 /* =========================
-   NEWSLETTER
+   INFORMATION
+========================= */
+
+.information {
+  text-align: center;
+  padding: 70px;
+}
+
+/* =========================
+   NEWSLETTER INDEX
 ========================= */
 
 .newsletter {
   padding: 70px;
   text-align: center;
   background: url("../images/subscribe.jpg") center/cover no-repeat;
-  color: var(--white);
+  color: #fff;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-input {
+  width: 400px;
+  padding: 12px;
+  border: none;
 }
 
 /* =========================
-   CATALOG
+   CATALOG HEADER
 ========================= */
 
 .catalog {
-  position: relative;
   padding: 35px 70px;
   background: url("../images/catalog-bg.jpg") center/cover no-repeat;
-  color: var(--white);
+  color: #fff;
+  position: relative;
 }
 
 .catalog::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.45);
 }
 
 .catalog > * {
   position: relative;
+}
+
+.catalog-title {
+  font-size: 60px;
+  margin: 0 0 10px;
+}
+
+/* =========================
+   BREADCRUMBS
+========================= */
+
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FILTER
+========================= */
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.filter-group {
+  border: none;
+}
+
+.filter-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   CONTROLS
+========================= */
+
+.catalog-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0 20px;
+}
+
+.catalog-found {
+  font-size: 30px;
+  margin: 0;
+}
+
+.catalog-sorting {
+  margin-left: auto;
 }
 
 /* =========================
@@ -264,9 +354,7 @@ img {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 30px;
-  padding: 0;
+  gap: 20px;
 }
 
 .hotel-card {
@@ -274,12 +362,27 @@ img {
   padding: 20px;
   display: grid;
   gap: 10px;
-  transition: 0.2s;
 }
 
-.hotel-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+.hotel-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotel-card-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.hotel-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-card-buttons {
+  display: flex;
+  gap: 10px;
 }
 
 /* =========================
@@ -289,53 +392,44 @@ img {
 .pagination {
   display: flex;
   gap: 8px;
-  margin-top: 40px;
-  padding: 0;
+  margin: 40px 0;
 }
 
-.pagination a {
+.pagination a,
+.pagination span {
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--blue);
-  color: var(--white);
+  color: #fff;
   text-decoration: none;
-  border-radius: 4px;
-}
-
-.pagination a:hover {
-  background: #68a2ca;
 }
 
 .pagination .active {
-  background: var(--black);
+  background: #000;
 }
 
 /* =========================
-   FOOTER
+   NEWSLETTER CATALOG
 ========================= */
 
-.page-footer {
-  padding: 45px 70px;
+.newsletter-main-catalog {
+  padding: 70px;
+  text-align: center;
+  background: #fff;
 }
 
-.footer-container {
+.newsletter-form {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
-.footer-social-list {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-.footer-phone {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--black);
+.newsletter-button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
 }

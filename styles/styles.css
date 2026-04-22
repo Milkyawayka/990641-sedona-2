@@ -97,20 +97,16 @@ img {
 .icon {
   display: flex;
   align-items: center;
-  height: 39px;
+  height: 64px;
   position: relative;
+  top: 4px;
 }
 
 .icon-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1px 0px 0px 1px;
-  gap: 10px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
+
 .count {
   position: absolute;
   right: -10px;
@@ -180,6 +176,16 @@ img {
   position: relative;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  background: url("../images/white-decoration.svg") center no-repeat;
+}
+
 .welcome {
   display: block;
 }
@@ -192,7 +198,7 @@ img {
 }
 
 .advantages {
-  padding: 63px 70px;
+  padding: 63px 0 0;
   text-align: center;
 }
 
@@ -205,19 +211,22 @@ img {
 }
 
 .advantages-item {
-  padding: 80px 30px;
-  background: #f0f6fa;
+  height: 384px;
+  padding: 80px 85px;
+  text-align: center;
+  justify-content: center;
 }
 
 .advantages-item--wide {
   grid-column: 1 / -1;
   display: flex;
+  min-height: 384px;
   padding: 0;
 }
 
 .advantages-box {
   flex: 1;
-  padding: 90px;
+  padding: 92px 85px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,11 +239,12 @@ img {
 
 .advantages-img {
   width: 50%;
+  height: 100%;
   object-fit: cover;
 }
 
 .reasons {
-  padding: 64px 70px;
+  padding: 64px 0 0;
   text-align: center;
 }
 
@@ -247,7 +257,7 @@ img {
 }
 
 .reasons-item {
-  padding: 80px 40px;
+  padding: 80px 30px;
   text-align: center;
 }
 

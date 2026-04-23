@@ -72,31 +72,49 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
             <fieldset class="filter-group">
+  
               <legend class="filter-title">Инфраструктура</legend>
-              <label class="filter-label">
-                <input class="filter-input" type="checkbox" name="pool" checked> Бассейн
-              </label>
-              <label class="filter-label">
-                <input class="filter-input" type="checkbox" name="parking" checked> Парковка
-              </label>
-              <label class="filter-label">
-                <input class="filter-input" type="checkbox" name="wifi"> Wi-Fi
-              </label>
-            </fieldset>
 
-            <fieldset class="filter-group">
-              <legend class="filter-title">Тип жилья</legend>
-              <label class="filter-label">
-                <input class="filter-input" type="radio" name="type" checked> Гостиница
-              </label>
-              <label class="filter-label">
-                <input class="filter-input" type="radio" name="type"> Мотель
-              </label>
-              <label class="filter-label">
-                <input class="filter-input" type="radio" name="type"> Апартаменты
-              </label>
-            </fieldset>
+  <label class="filter-label">
+    <input class="filter-input" type="checkbox" checked>
+    <span class="check"></span>
+    Бассейн
+  </label>
 
+  <label class="filter-label">
+    <input class="filter-input" type="checkbox" checked>
+    <span class="check"></span>
+    Парковка
+  </label>
+
+  <label class="filter-label">
+    <input class="filter-input" type="checkbox">
+    <span class="check"></span>
+    Wi-Fi
+  </label>
+</fieldset>
+
+<fieldset class="filter-group">
+  <legend class="filter-title">Тип жилья</legend>
+
+  <label class="filter-label">
+    <input class="filter-input" type="radio" name="housing" checked>
+    <span class="radio"></span>
+    Гостиница
+  </label>
+
+  <label class="filter-label">
+    <input class="filter-input" type="radio" name="housing">
+    <span class="radio"></span>
+    Мотель
+  </label>
+
+  <label class="filter-label">
+    <input class="filter-input" type="radio" name="housing">
+    <span class="radio"></span>
+    Апартаменты
+  </label>
+</fieldset>
             <fieldset class="filter-group">
               <legend class="filter-title">Стоимость, ₽:</legend>
 
@@ -129,7 +147,7 @@
           <h2 class="catalog-found">Найдено гостиниц: 38</h2>
 
           <select class="catalog-sorting">
-            <option>Сначала дешёвые</option>
+            <option>Сначала дешевые</option>
             <option>Сначала дорогие</option>
           </select>
 

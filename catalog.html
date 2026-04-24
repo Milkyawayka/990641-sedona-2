@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="page">
+<body class="page page--catalog">
   <div class="container">
 
     <header class="header">
@@ -72,49 +72,43 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
             <fieldset class="filter-group">
-  
+
               <legend class="filter-title">Инфраструктура</legend>
 
-  <label class="filter-label">
-    <input class="filter-input" type="checkbox" checked>
-    <span class="check"></span>
-    Бассейн
-  </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" checked>
+                <span class="check"></span> Бассейн
+              </label>
 
-  <label class="filter-label">
-    <input class="filter-input" type="checkbox" checked>
-    <span class="check"></span>
-    Парковка
-  </label>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox" checked>
+                <span class="check"></span> Парковка
+              </label>
 
-  <label class="filter-label">
-    <input class="filter-input" type="checkbox">
-    <span class="check"></span>
-    Wi-Fi
-  </label>
-</fieldset>
+              <label class="filter-label">
+                <input class="filter-input" type="checkbox">
+                <span class="check"></span> Wi-Fi
+              </label>
+            </fieldset>
 
-<fieldset class="filter-group">
-  <legend class="filter-title">Тип жилья</legend>
+            <fieldset class="filter-group">
+              <legend class="filter-title">Тип жилья</legend>
 
-  <label class="filter-label">
-    <input class="filter-input" type="radio" name="housing" checked>
-    <span class="radio"></span>
-    Гостиница
-  </label>
+              <label class="filter-label">
+                <input class="filter-input" type="radio" name="housing" checked>
+                <span class="radio"></span> Гостиница
+              </label>
 
-  <label class="filter-label">
-    <input class="filter-input" type="radio" name="housing">
-    <span class="radio"></span>
-    Мотель
-  </label>
+              <label class="filter-label">
+                <input class="filter-input" type="radio" name="housing">
+                <span class="radio"></span> Мотель
+              </label>
 
-  <label class="filter-label">
-    <input class="filter-input" type="radio" name="housing">
-    <span class="radio"></span>
-    Апартаменты
-  </label>
-</fieldset>
+              <label class="filter-label">
+                <input class="filter-input" type="radio" name="housing">
+                <span class="radio"></span> Апартаменты
+              </label>
+            </fieldset>
             <fieldset class="filter-group">
               <legend class="filter-title">Стоимость, ₽:</legend>
 
@@ -130,6 +124,13 @@
                 </label>
               </div>
 
+              <div class="range">
+                <div class="range-scale"></div>
+                <div class="range-bar"></div>
+
+                <button class="range-toggle range-toggle--min"></button>
+                <button class="range-toggle range-toggle--max"></button>
+              </div>
             </fieldset>
 
             <div class="filter-buttons">
@@ -166,78 +167,105 @@
 
         <ul class="hotel-list list-reset">
 
-  <li class="hotel-card">
-    <img class="image hotel-card-image" src="images/hotel-1.jpg" alt="Отель Amara Resort & Spa">
-    <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-    <div class="hotel-card-info">
-      <span>Гостиница</span>
-      <span>От 4000 ₽</span>
-    </div>
-    <div class="hotel-card-buttons">
-      <a class="button" href="#">Подробнее</a>
-      <a class="button button--favorite" href="#">В избранное</a>
-    </div>
-    <p class="rating">Рейтинг: 8,5</p>
-  </li>
+          <li class="hotel-card">
+            <img class="image hotel-card-image" src="images/hotel-1.jpg" alt="Отель Amara Resort & Spa">
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <div class="hotel-card-info">
+              <span>Гостиница</span>
+              <span>От 4000 ₽</span>
+            </div>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
+            </div>
+            <p class="rating rating--4">
+              <span class="rating-stars"></span>
+              <span class="rating-value"> Рейтинг: 8,5</span>
+            </p>
+          </li>
 
-  <li class="hotel-card hotel-card--favorite">
-    <img class="image hotel-card-image" src="images/hotel-2.jpg" alt="Отель Villas at Poco Diablo">
-    <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-    <div class="hotel-card-info">
-      <span>Гостиница</span>
-      <span>От 5000 ₽</span>
-    </div>
-    <div class="hotel-card-buttons">
-      <a class="button" href="#">Подробнее</a>
-      <a class="button button--favorite-active" href="#">В избранном</a>
-    </div>
-    <p class="rating">Рейтинг: 9,2</p>
-  </li>
+          <li class="hotel-card hotel-card--favorite">
+            <img class="image hotel-card-image" src="images/hotel-2.jpg" alt="Отель Villas at Poco Diablo">
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            <div class="hotel-card-info">
+              <span>Гостиница</span>
+              <span>От 5000 ₽</span>
+            </div>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite-active" href="#">В избранном</a>
+            </div>
+            <p class="rating rating--4">
+              <span class="rating-stars"></span>
+              <span class="rating-value"> Рейтинг: 9,2</span>
+            </p>
+          </li>
 
-  <li class="hotel-card">
-    <img class="image hotel-card-image" src="images/hotel-3.jpg" alt="Отель Desert Quail Inn">
-    <h3 class="hotel-card-title">Desert Quail Inn</h3>
-    <div class="hotel-card-info">
-      <span>Гостиница</span>
-      <span>От 2500 ₽</span>
-    </div>
-    <div class="hotel-card-buttons">
-      <a class="button" href="#">Подробнее</a>
-      <a class="button button--favorite" href="#">В избранное</a>
-    </div>
-    <p class="rating">Рейтинг: 6,9</p>
-  </li>
+          <li class="hotel-card">
+            <img class="image hotel-card-image" src="images/hotel-3.jpg" alt="Отель Desert Quail Inn">
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            <div class="hotel-card-info">
+              <span>Гостиница</span>
+              <span>От 2500 ₽</span>
+            </div>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
+            </div>
+            <p class="rating rating--3">
+              <span class="rating-stars"></span>
+              <span class="rating-value"> Рейтинг: 6,9</span>
+            </p>
+          </li>
 
-  <li class="hotel-card">
-    <img class="image hotel-card-image" src="images/hotel-4.jpg" alt="Отель GreenTree Inn">
-    <h3 class="hotel-card-title">GreenTree Inn</h3>
-    <div class="hotel-card-info">
-      <span>Гостиница</span>
-      <span>От 1500 ₽</span>
-    </div>
-    <div class="hotel-card-buttons">
-      <a class="button" href="#">Подробнее</a>
-      <a class="button button--favorite" href="#">В избранное</a>
-    </div>
-    <p class="rating">Рейтинг: 5,0</p>
-  </li>
+          <li class="hotel-card">
+            <img class="image hotel-card-image" src="images/hotel-4.jpg" alt="Отель GreenTree Inn">
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+            <div class="hotel-card-info">
+              <span>Гостиница</span>
+              <span>От 1500 ₽</span>
+            </div>
+            <div class="hotel-card-buttons">
+              <a class="button" href="#">Подробнее</a>
+              <a class="button button--favorite" href="#">В избранное</a>
+            </div>
+            <p class="rating rating--2">
+              <span class="rating-stars"></span>
+              <span class="rating-value"> Рейтинг: 5,0</span>
+            </p>
+          </li>
 
-</ul>
+        </ul>
+
+        <div class="catalog-divider"></div>
 
         <ul class="pagination list-reset">
-          <li><a class="active">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><span>...</span></li>
-          <li><a href="#">10</a></li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link--active" href="">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <span class="pagination-more">...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
         </ul>
 
         <section class="newsletter-main-catalog">
           <div class="newsletter-text">
             <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-catalog-description">
-              Только полезная информация и никакого спама,<br>
-              честное бойскаутское!
+              Только полезная информация и никакого спама,
+              <br> честное бойскаутское!
             </p>
           </div>
 
@@ -254,9 +282,15 @@
       <div class="footer-container">
 
         <ul class="footer-social-list list-reset">
-          <li><a href="#"><img class="image" src="images/social-vk.svg" alt="ВКонтакте"></a></li>
-          <li><a href="#"><img class="image" src="images/social-telegram.svg" alt="Telegram"></a></li>
-          <li><a href="#"><img class="image" src="images/social-youtube.svg" alt="YouTube"></a></li>
+          <li>
+            <a href="#"><img class="image" src="images/social-vk.svg" alt="ВКонтакте"></a>
+          </li>
+          <li>
+            <a href="#"><img class="image" src="images/social-telegram.svg" alt="Telegram"></a>
+          </li>
+          <li>
+            <a href="#"><img class="image" src="images/social-youtube.svg" alt="YouTube"></a>
+          </li>
         </ul>
 
         <a href="tel:+78128121212" class="footer-phone">
@@ -272,4 +306,5 @@
 
   </div>
 </body>
+
 </html>

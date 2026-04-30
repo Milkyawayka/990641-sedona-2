@@ -9,6 +9,77 @@
 </head>
 
 <body class="page page--home">
+<section class="modal">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+
+    <button class="modal__close" type="button" aria-label="Закрыть">
+      ✕
+    </button>
+
+    <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+
+    <form class="modal__form">
+
+      <div class="modal__row">
+        <label class="modal__label">Дата заезда:</label>
+
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="text" value="27 апреля 2020">
+          <img class="modal__icon" src="images/date.png" alt="Календарь">
+          <p class="modal__error">Мы не можем отправить вас в прошлое</p>
+        </div>
+      </div>
+
+      <div class="modal__row">
+        <label class="modal__label">Дата выезда:</label>
+
+        <div class="modal__input-wrapper">
+          <input class="modal__input" type="text" value="7 сентября 2023">
+          <img class="modal__icon" src="images/date.png" alt="Календарь">
+        </div>
+      </div>
+
+      <div class="modal__guests">
+
+        <div class="modal__guest">
+          <span>Взрослые:</span>
+
+          <div class="counter">
+            <button type="button">−</button>
+            <span>2</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+
+        <div class="modal__guest">
+          <span>
+            Дети:
+            <span class="tooltip">i
+              <span class="tooltip__text">
+                Укажите количество детей от 6 до 18 лет
+              </span>
+            </span>
+          </span>
+
+          <div class="counter">
+            <button type="button">−</button>
+            <span>2</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="modal__submit" type="submit">
+        Найти
+      </button>
+
+    </form>
+
+  </div>
+</section>
   <div class="container">
 
     <header class="header">

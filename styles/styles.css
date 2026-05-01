@@ -33,6 +33,12 @@ body {
   background-color: #f2f2f2;
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -61,7 +67,7 @@ img {
 }
 
 .menu {
-  margin: 0;
+  margin-left: 200px;
   padding: 0;
   list-style: none;
 }
@@ -236,15 +242,14 @@ img {
 
 .header {
   position: relative;
+  height: 64px;
 }
 
-.logo {
+.header-logo {
   position:absolute;
   top: 0;
-  display: block;
-  width: 140px;
-  height: 70px;
-  z-index: 1;
+  left: 70px;
+  z-index: 2;
 }
 
 .navigation {
@@ -271,7 +276,7 @@ img {
 }
 
 .menu-link:not(.menu-link-active):active {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .menu-link:focus {
@@ -296,7 +301,7 @@ img {
 .user {
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-start;
+  gap: 20px;
   align-items: center;
   flex-shrink: 0; 
 }
@@ -337,7 +342,7 @@ position: absolute;
 }
 
 .search-item:hover:after,
-.favourites:hover:after {
+.favourites-item:hover:after {
   content: "";
   position: absolute;
   left: 10px;
@@ -394,6 +399,7 @@ position: absolute;
 
 .advantages {
   margin-bottom: 64px;
+  width: 100%;
 }
 
 .advantages .section-title {
@@ -411,6 +417,9 @@ position: absolute;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item,
@@ -434,7 +443,10 @@ position: absolute;
 }
 
 .advantages-item-dark {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
   flex-basis: 100%;
   padding: 0;
   background-color: #82B3D3;
@@ -498,7 +510,7 @@ position: absolute;
 }
 
 .reasons-item-title-house:before {
-  content: url("../images/house.svg");
+  content: url("images/house.svg");
 }
 
 .reasons-item-title-eat:before {
@@ -901,9 +913,13 @@ position: absolute;
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e5e5e5;
+  align-items: stretch;
 }
 
 .hotel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   box-shadow: 0 0 0 1px #e6e6e6;
   border-radius: 4px;

@@ -9,12 +9,13 @@
 </head>
 
 <body>
-  <div class="modal-container">
+  <div class="modal-overlay">
+    <div class="modal-container">
       <div class="modal" data-test="modal">
         <p class="modal-title">Поиск гостиницы в Седоне</p>
         <button class="modal-close-button" type="button">
           <svg aria-hidden="true" focusable="false" role="img" aria-label="Закрыть." width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
           </svg>
         </button>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -35,13 +36,13 @@
               <div class="form-number-block">
                 <button class="form-number-button form-number-button-minus" type="button">
                   <svg aria-hidden="true" focusable="false" role="img" aria-label="Уменьшить." width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </button>
                 <input class="form-number" id="number-adults" type="number" name="number-adults" placeholder="2">
                 <button class="form-number-button form-number-button-plus" type="button">
                   <svg aria-hidden="true" focusable="false" role="img" aria-label="Увеличить." width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
                 </button>
               </div>
@@ -61,17 +62,17 @@
                 </span>
               </span>
               <div class="form-number-block">
-              <button class="form-number-button form-number-button-minus" type="button">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Уменьшить." width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                </svg>
-              </button>
-              <input class="form-number" id="number-children" type="number" name="number-children" placeholder="2">
-              <button class="form-number-button form-number-button-plus" type="button">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Увеличить" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                </svg>
-              </button>
+                <button class="form-number-button form-number-button-minus" type="button">
+                  <svg aria-hidden="true" focusable="false" role="img" aria-label="Уменьшить." width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </button>
+                <input class="form-number" id="number-children" type="number" name="number-children" placeholder="2">
+                <button class="form-number-button form-number-button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" role="img" aria-label="Увеличить" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
               </div>
               <span class="form-input-message"></span>
             </div>
@@ -80,12 +81,13 @@
         </form>
       </div>
     </div>
+  </div>
   <div class="container">
     <header class="header" data-test="header">
-        <a class="header-logo" href="index.html">
-          <img src="images/logo.png" width="140" height="70" alt="Логотип города Седона">
-        </a>
-        <nav class="menu">
+      <a class="header-logo" href="index.html">
+        <img src="images/logo.png" width="140" height="70" alt="Логотип города Седона">
+      </a>
+      <nav class="menu">
         <ul class="list-reset menu-list">
           <li class="menu-item">
             <a class="menu-link menu-link-active">Главная</a>
@@ -97,17 +99,17 @@
             <a class="menu-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        </nav>
-        <div class="user">
-          <a class="search-item" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-            <a class="favourites-item" href="#">
-              <span class="favourites-count">12</span>
-              <span class="visually-hidden">Избранное</span>
-            </a>
-            <a class="button" href="#">Хочу сюда!</a>
-        </div>
+      </nav>
+      <div class="user">
+        <a class="search-item" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a class="favourites-item" href="#">
+          <span class="favourites-count">12</span>
+          <span class="visually-hidden">Избранное</span>
+        </a>
+        <a class="button" href="#">Хочу сюда!</a>
+      </div>
     </header>
 
     <main data-test="main">
@@ -116,9 +118,9 @@
         <img class="hero-img" src="images/welcome-text.svg" width="456" height="351" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks.">
       </section>
       <section class="advantages" data-test="advantages">
-          <h2 class="visually-hidden">Преимущества городка Седона</h2>
-      <p class="section-title">Седона— небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="section-item-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="visually-hidden">Преимущества городка Седона</h2>
+        <p class="section-title">Седона— небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="section-item-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-dark">
@@ -132,21 +134,21 @@
           </li>
 
           <li class="advantages-item">
-              <h3 class="advantages-item-title">Небольшая площадь</h3>
-              <div class="advantages-line"></div>
-              <p class="advantages-text">Все достопримечательности находятся очень близко</p>
+            <h3 class="advantages-item-title">Небольшая площадь</h3>
+            <div class="advantages-line"></div>
+            <p class="advantages-text">Все достопримечательности находятся очень близко</p>
           </li>
 
           <li class="advantages-item">
-              <h3 class="advantages-item-title">Красивая дорога</h3>
-              <div class="advantages-line"></div>
-              <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages-item-title">Красивая дорога</h3>
+            <div class="advantages-line"></div>
+            <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
           <li class="advantages-item">
-              <h3 class="advantages-item-title">Мало туристов</h3>
-              <div class="advantages-line"></div>
-              <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="advantages-item-title">Мало туристов</h3>
+            <div class="advantages-line"></div>
+            <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
           <li class="advantages-item advantages-item-dark advantages-item-reverse">
@@ -162,8 +164,8 @@
 
       <section class="reasons" data-test="reasons">
         <h2 class="visually-hidden">Приглашение в Седону</h2>
-          <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="section-item-text">Опытный персонал и качественное обслуживание!</p>
+        <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="section-item-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="reasons-list">
           <li class="reasons-item">
             <img class="reasons-img" src="images/house.svg" alt="Жилье">
@@ -194,12 +196,12 @@
       </section>
 
       <section class="newsletter" data-test="subscription">
-          <h2 class="section-title">Подпишитесь на рассылку</h2>
-          <p class="section-item-text">Только полезная информация и никакого спама,
-            <br> честное бойскаутское!</p>
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
+        <p class="section-item-text">Только полезная информация и никакого спама,
+          <br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
-          <input class="newsletter-input-email" type="email" name="newsletter-email" placeholder="Ваш e-mail" required="required">
+            <input class="newsletter-input-email" type="email" name="newsletter-email" placeholder="Ваш e-mail" required="required">
           </label>
           <input class="button newsletter-button" type="submit" value="Подписаться">
         </form>
@@ -207,34 +209,35 @@
     </main>
 
     <footer class="footer" data-test="footer">
-        <ul class="list-reset social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy">
-              <img class="footer-social-icon" src="images/social-vk.svg" alt="Вконтакте">
-            </a>
-          </li>
+      <ul class="list-reset social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://vk.com/htmlacademy">
+            <img class="footer-social-icon" src="images/social-vk.svg" alt="Вконтакте">
+          </a>
+        </li>
 
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy">
-              <img class="footer-social-icon" src="images/social-telegram.svg" alt="Telegram">
-            </a>
-          </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://t.me/htmlacademy">
+            <img class="footer-social-icon" src="images/social-telegram.svg" alt="Telegram">
+          </a>
+        </li>
 
-          <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="footer-social-icon" src="images/social-youtube.svg" alt="YouTube">
-            </a>
-          </li>
-        </ul>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="footer-social-icon" src="images/social-youtube.svg" alt="YouTube">
+          </a>
+        </li>
+      </ul>
 
-        <a class="footer-phone" href="tel:+78128121212">
+      <a class="footer-phone" href="tel:+78128121212">
           +7 812 812-12-12
         </a>
 
-        <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="images/html-academy.svg" alt="HTML Academy">
-        </a>
+      <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="images/html-academy.svg" alt="HTML Academy">
+      </a>
     </footer>
   </div>
 </body>
+
 </html>

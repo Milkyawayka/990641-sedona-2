@@ -40,7 +40,7 @@ body {
 }
 
 img {
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
   object-fit: contain;
